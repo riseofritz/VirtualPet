@@ -131,13 +131,7 @@ void draw()
   curveVertex(240,599);
   endShape();
   
-  beginShape();
-  curveVertex(315,610);
-  curveVertex(315,610);
-  curveVertex(360,564);
-  curveVertex(397,585);
-  curveVertex(397,585);
-  endShape();
+
   
   beginShape();
   curveVertex(239,601);
@@ -147,13 +141,6 @@ void draw()
   curveVertex(325,600);
   endShape();
   
-  beginShape();
-  curveVertex(380,569);
-  curveVertex(380,569);
-  curveVertex(410,573);
-  curveVertex(440,620);
-  curveVertex(440,620);
-  endShape();
   
   beginShape();
   curveVertex(315,610);
@@ -171,6 +158,14 @@ void draw()
   curveVertex(473,605);
   endShape();
   
+    beginShape();
+  curveVertex(380,569);
+  curveVertex(380,569);
+  curveVertex(410,573);
+  curveVertex(440,620);
+  curveVertex(440,620);
+  endShape();
+  
   beginShape();
   curveVertex(430,605);
   curveVertex(430,605);
@@ -178,6 +173,22 @@ void draw()
   curveVertex(473,605);
   curveVertex(473,605);
   endShape();
+  
+   beginShape();
+  curveVertex(315,610);
+  curveVertex(315,610);
+  curveVertex(360,564);
+  curveVertex(397,585);
+  curveVertex(397,585);
+  endShape();
+  
+  noStroke();
+  triangle(318,609,440,620,400,585);
+  triangle(433,605,425,590,470,605);
+  //triangle(240,600,250,590,470,605);
+  
+  
+  stroke(0);
   
   fill(74, 120, 48);
   beginShape();
@@ -197,6 +208,7 @@ void draw()
   endShape();
   
   line(250,561,255,568);
+ 
   
   fill(254, 242, 120);
   pushMatrix();

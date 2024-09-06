@@ -7,65 +7,72 @@ void draw()
 
   noFill();
   fill(254, 242, 120);
+  //top petal
   ellipse(350, 255, 65, 110);
  
   pushMatrix();
   rotate(radians(15));
+  //right one petal
   ellipse(455, 160, 65, 110);
   popMatrix();
 
   pushMatrix();
   rotate(radians(40));
+  //right two petal
   ellipse(530, -45, 65, 110);
   popMatrix();
  
   pushMatrix();
   rotate(radians(75));
+  //right three petal
   ellipse(450, -350, 65, 110);
   popMatrix();
  
   pushMatrix();
-  rotate(radians(155));
-  ellipse(-145, -530, 65, 110);
-  popMatrix();
- 
-  pushMatrix();
   rotate(radians(95));
+  //right four petal
   ellipse(350, -470, 65, 110);
   popMatrix();
  
   pushMatrix();
   rotate(radians(125));
+  //right five petal
   ellipse(110, -565, 65, 110);
   popMatrix();
  
   pushMatrix();
   rotate(radians(190));
+  //bottom left two petal
   arc(-330, -350, 65, 110, PI, 2*PI);
   popMatrix();
  
   pushMatrix();
   rotate(radians(220));
+  //bottom left three petal
   ellipse(-420, -130, 65, 110);
   popMatrix();
  
   pushMatrix();
   rotate(radians(250));
+  //bottom left four petal
   ellipse(-380, 105, 65, 110);
   popMatrix();
  
   pushMatrix();
   rotate(radians(280));
+  //top left two petal
   ellipse(-230, 300, 65, 110);
   popMatrix();
  
   pushMatrix();
   rotate(radians(320));
+  //top left one petal
   ellipse(75, 400, 65, 110);
   popMatrix();
  
   noFill();
   beginShape();
+  //left stem
   curveVertex(330,447);
   curveVertex(330,447);
   curveVertex(326,500);
@@ -76,6 +83,7 @@ void draw()
   fill(130, 189, 73);
   noFill();
   beginShape();
+  //right stem
   curveVertex(350,447);
   curveVertex(350,447);
   curveVertex(344,500);
@@ -85,6 +93,7 @@ void draw()
  
  noStroke();
  fill(130, 189, 73);
+ //stem color
  triangle(330,461,341,435,347,465);
  triangle(330,461,341,535,346,465);
  triangle(330,461,327,500,346,465);
@@ -97,6 +106,7 @@ void draw()
   fill(130, 189, 73);
   stroke(0);
   beginShape();
+  //top line left middle leaf
   curveVertex(275,480);
   curveVertex(275,480);
   curveVertex(316,490);
@@ -105,6 +115,7 @@ void draw()
   endShape();
  
   beginShape();
+  //bottom line left middle leaf
   curveVertex(275,480);
   curveVertex(275,480);
   curveVertex(305,520);
@@ -113,6 +124,7 @@ void draw()
   endShape();
  
   beginShape();
+  //bottom line right middle leaf
   curveVertex(415,500);
   curveVertex(415,500);
   curveVertex(380,530);
@@ -121,6 +133,7 @@ void draw()
   endShape();
  
   beginShape();
+  //top line right middle leaf
   curveVertex(415,500);
   curveVertex(415,500);
   curveVertex(355,508);
@@ -130,6 +143,7 @@ void draw()
   
   noStroke();
   fill(74, 120, 48);
+  //bottom back leaves color
   triangle(253,561,332,545,335,575);
   triangle(253,561,330,575,255,569);
   triangle(351,545,357,570,431,560);
@@ -137,6 +151,7 @@ void draw()
   stroke(0);
   fill(130, 189, 73);
   beginShape();
+  //left bottom leaf, first top line (right)
   curveVertex(348,569);
   curveVertex(348,569);
   curveVertex(305,555);
@@ -144,8 +159,8 @@ void draw()
   curveVertex(265,575);
   endShape();
  
-  //bottom left leaf
   beginShape();
+  //left bottom leaf, second top line (left)
   curveVertex(293,556);
   curveVertex(293,556);
   curveVertex(260,565);
@@ -153,9 +168,8 @@ void draw()
   curveVertex(240,599);
   endShape();
  
-
- 
   beginShape();
+  //left bottom leaf, bottom line
   curveVertex(239,601);
   curveVertex(239,601);
   curveVertex(270,610);
@@ -165,6 +179,7 @@ void draw()
  
  
   beginShape();
+  //middle bottom leaf, bottom line
   curveVertex(315,610);
   curveVertex(315,610);
   curveVertex(375,625);
@@ -173,6 +188,7 @@ void draw()
   endShape();
  
   beginShape();
+  //right bottom leaf, top line
   curveVertex(355,565);
   curveVertex(355,565);
   curveVertex(430,559);
@@ -181,6 +197,7 @@ void draw()
   endShape();
  
   beginShape();
+  //middle bottom leaf, top line (right)
   curveVertex(380,569);
   curveVertex(380,569);
   curveVertex(410,573);
@@ -189,6 +206,7 @@ void draw()
   endShape();
  
   beginShape();
+  //right bottom leaf, bottom line
   curveVertex(430,605);
   curveVertex(430,605);
   curveVertex(450,610);
@@ -197,6 +215,7 @@ void draw()
   endShape();
  
   beginShape();
+  //middle bottom leaf, top line (left)
   curveVertex(315,610);
   curveVertex(315,610);
   curveVertex(360,564);
@@ -205,6 +224,7 @@ void draw()
   endShape();
  
   noStroke();
+  //middle leaf, bottom left, right, left leaf color
   triangle(315,609,440,620,400,585);
   triangle(433,605,425,590,470,605);
   triangle(240,600,270,573,270,605);
@@ -226,6 +246,7 @@ void draw()
   endShape();
  
   beginShape();
+  //bottom behind left leaf
   curveVertex(330,546);
   curveVertex(330,546);
   curveVertex(290,539);
@@ -239,11 +260,13 @@ void draw()
   fill(254, 242, 120);
   pushMatrix();
   rotate(radians(155));
+  //bottom middle petal
   ellipse(-145, -530, 65, 110);
   popMatrix();
  
   pushMatrix();
   rotate(radians(170));
+  //bottom middle left one petal
   arc(-230, -460, 65, 110, PI, 2*PI);
   popMatrix();
  
@@ -253,15 +276,18 @@ void draw()
   fill(0);
   pushMatrix();
   rotate(radians(175));
+  //black left eye
   ellipse(-265,-350, 25, 45);
   popMatrix();
  
   pushMatrix();
   rotate(radians(175));
+  //black right eye
   ellipse(-360,-356, 25, 45);
   popMatrix();
  
  
+ //smile
   beginShape();
   noFill();
   curveVertex(269,380);
@@ -270,7 +296,7 @@ void draw()
   curveVertex(440,377);
   curveVertex(440,377);
   endShape();
-   
+
   beginShape();
   curveVertex(269,380);
   curveVertex(269,380);
@@ -278,7 +304,7 @@ void draw()
   curveVertex(440,377);
   curveVertex(440,377);
   endShape();
- 
+
   beginShape();
   curveVertex(269,380);
   curveVertex(269,380);
@@ -313,6 +339,7 @@ void draw()
    
    
   beginShape();
+  //dimple left
   curveVertex(275,374);
   curveVertex(275,374);
   curveVertex(269,380);
@@ -321,6 +348,7 @@ void draw()
   endShape();
  
   beginShape();
+  //dimple right
   curveVertex(436,371);
   curveVertex(436,371);
   curveVertex(440,377);
@@ -329,6 +357,7 @@ void draw()
   endShape();
    
   fill(255, 255, 255);
+  //eye pupil
   ellipse(293,315,13,15);
   ellipse(388,313,13,15);
 }
